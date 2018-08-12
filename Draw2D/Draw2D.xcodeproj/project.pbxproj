@@ -19,6 +19,8 @@
 		78289C8C2120245A00AC50F0 /* DrawKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78289C772120245A00AC50F0 /* DrawKit.framework */; };
 		78289C8D2120245A00AC50F0 /* DrawKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78289C772120245A00AC50F0 /* DrawKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78289C962120248100AC50F0 /* MyDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78289C952120248100AC50F0 /* MyDrawView.swift */; };
+		787FBB1C21205A4900459B88 /* DrawPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787FBB1B21205A4900459B88 /* DrawPathView.swift */; };
+		787FBB1E21205CFF00459B88 /* ThirdBezierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787FBB1D21205CFF00459B88 /* ThirdBezierView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		78289C862120245A00AC50F0 /* DrawKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawKitTests.swift; sourceTree = "<group>"; };
 		78289C882120245A00AC50F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78289C952120248100AC50F0 /* MyDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDrawView.swift; sourceTree = "<group>"; };
+		787FBB1B21205A4900459B88 /* DrawPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPathView.swift; sourceTree = "<group>"; };
+		787FBB1D21205CFF00459B88 /* ThirdBezierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdBezierView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				78289C792120245A00AC50F0 /* DrawKit.h */,
 				78289C7A2120245A00AC50F0 /* Info.plist */,
 				78289C952120248100AC50F0 /* MyDrawView.swift */,
+				787FBB1B21205A4900459B88 /* DrawPathView.swift */,
+				787FBB1D21205CFF00459B88 /* ThirdBezierView.swift */,
 			);
 			path = DrawKit;
 			sourceTree = "<group>";
@@ -376,6 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				78289C962120248100AC50F0 /* MyDrawView.swift in Sources */,
+				787FBB1E21205CFF00459B88 /* ThirdBezierView.swift in Sources */,
+				787FBB1C21205A4900459B88 /* DrawPathView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
