@@ -13,6 +13,12 @@
 		78289C0921200F0D00AC50F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78289C0821200F0D00AC50F0 /* Assets.xcassets */; };
 		78289C0C21200F0D00AC50F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78289C0A21200F0D00AC50F0 /* LaunchScreen.storyboard */; };
 		78289C1721200F0D00AC50F0 /* LiveViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78289C1621200F0D00AC50F0 /* LiveViewDemoTests.swift */; };
+		78289C2F212010F800AC50F0 /* MyDrawKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78289C26212010F800AC50F0 /* MyDrawKit.framework */; };
+		78289C36212010F800AC50F0 /* MyDrawKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78289C35212010F800AC50F0 /* MyDrawKitTests.swift */; };
+		78289C38212010F800AC50F0 /* MyDrawKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 78289C28212010F800AC50F0 /* MyDrawKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78289C3B212010F800AC50F0 /* MyDrawKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78289C26212010F800AC50F0 /* MyDrawKit.framework */; };
+		78289C3C212010F800AC50F0 /* MyDrawKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78289C26212010F800AC50F0 /* MyDrawKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78289C452120115700AC50F0 /* MyDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78289C442120115700AC50F0 /* MyDrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +29,42 @@
 			remoteGlobalIDString = 78289BFD21200F0B00AC50F0;
 			remoteInfo = LiveViewDemo;
 		};
+		78289C30212010F800AC50F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78289BF621200F0B00AC50F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78289C25212010F800AC50F0;
+			remoteInfo = MyDrawKit;
+		};
+		78289C32212010F800AC50F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78289BF621200F0B00AC50F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78289BFD21200F0B00AC50F0;
+			remoteInfo = LiveViewDemo;
+		};
+		78289C39212010F800AC50F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78289BF621200F0B00AC50F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78289C25212010F800AC50F0;
+			remoteInfo = MyDrawKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78289C40212010F800AC50F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				78289C3C212010F800AC50F0 /* MyDrawKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		78289BFE21200F0B00AC50F0 /* LiveViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +77,13 @@
 		78289C1221200F0D00AC50F0 /* LiveViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78289C1621200F0D00AC50F0 /* LiveViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewDemoTests.swift; sourceTree = "<group>"; };
 		78289C1821200F0D00AC50F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78289C26212010F800AC50F0 /* MyDrawKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyDrawKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78289C28212010F800AC50F0 /* MyDrawKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDrawKit.h; sourceTree = "<group>"; };
+		78289C29212010F800AC50F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78289C2E212010F800AC50F0 /* MyDrawKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDrawKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78289C35212010F800AC50F0 /* MyDrawKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDrawKitTests.swift; sourceTree = "<group>"; };
+		78289C37212010F800AC50F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78289C442120115700AC50F0 /* MyDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78289C3B212010F800AC50F0 /* MyDrawKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +99,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78289C22212010F800AC50F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78289C2B212010F800AC50F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78289C2F212010F800AC50F0 /* MyDrawKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +125,8 @@
 			children = (
 				78289C0021200F0B00AC50F0 /* LiveViewDemo */,
 				78289C1521200F0D00AC50F0 /* LiveViewDemoTests */,
+				78289C27212010F800AC50F0 /* MyDrawKit */,
+				78289C34212010F800AC50F0 /* MyDrawKitTests */,
 				78289BFF21200F0B00AC50F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +136,8 @@
 			children = (
 				78289BFE21200F0B00AC50F0 /* LiveViewDemo.app */,
 				78289C1221200F0D00AC50F0 /* LiveViewDemoTests.xctest */,
+				78289C26212010F800AC50F0 /* MyDrawKit.framework */,
+				78289C2E212010F800AC50F0 /* MyDrawKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +164,37 @@
 			path = LiveViewDemoTests;
 			sourceTree = "<group>";
 		};
+		78289C27212010F800AC50F0 /* MyDrawKit */ = {
+			isa = PBXGroup;
+			children = (
+				78289C28212010F800AC50F0 /* MyDrawKit.h */,
+				78289C29212010F800AC50F0 /* Info.plist */,
+				78289C442120115700AC50F0 /* MyDrawView.swift */,
+			);
+			path = MyDrawKit;
+			sourceTree = "<group>";
+		};
+		78289C34212010F800AC50F0 /* MyDrawKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				78289C35212010F800AC50F0 /* MyDrawKitTests.swift */,
+				78289C37212010F800AC50F0 /* Info.plist */,
+			);
+			path = MyDrawKitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		78289C23212010F800AC50F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78289C38212010F800AC50F0 /* MyDrawKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		78289BFD21200F0B00AC50F0 /* LiveViewDemo */ = {
@@ -106,10 +204,12 @@
 				78289BFA21200F0B00AC50F0 /* Sources */,
 				78289BFB21200F0B00AC50F0 /* Frameworks */,
 				78289BFC21200F0B00AC50F0 /* Resources */,
+				78289C40212010F800AC50F0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				78289C3A212010F800AC50F0 /* PBXTargetDependency */,
 			);
 			name = LiveViewDemo;
 			productName = LiveViewDemo;
@@ -134,6 +234,43 @@
 			productReference = 78289C1221200F0D00AC50F0 /* LiveViewDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		78289C25212010F800AC50F0 /* MyDrawKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78289C3D212010F800AC50F0 /* Build configuration list for PBXNativeTarget "MyDrawKit" */;
+			buildPhases = (
+				78289C21212010F800AC50F0 /* Sources */,
+				78289C22212010F800AC50F0 /* Frameworks */,
+				78289C23212010F800AC50F0 /* Headers */,
+				78289C24212010F800AC50F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDrawKit;
+			productName = MyDrawKit;
+			productReference = 78289C26212010F800AC50F0 /* MyDrawKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78289C2D212010F800AC50F0 /* MyDrawKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78289C41212010F800AC50F0 /* Build configuration list for PBXNativeTarget "MyDrawKitTests" */;
+			buildPhases = (
+				78289C2A212010F800AC50F0 /* Sources */,
+				78289C2B212010F800AC50F0 /* Frameworks */,
+				78289C2C212010F800AC50F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78289C31212010F800AC50F0 /* PBXTargetDependency */,
+				78289C33212010F800AC50F0 /* PBXTargetDependency */,
+			);
+			name = MyDrawKitTests;
+			productName = MyDrawKitTests;
+			productReference = 78289C2E212010F800AC50F0 /* MyDrawKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,6 +285,14 @@
 						CreatedOnToolsVersion = 9.4;
 					};
 					78289C1121200F0D00AC50F0 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 78289BFD21200F0B00AC50F0;
+					};
+					78289C25212010F800AC50F0 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+					78289C2D212010F800AC50F0 = {
 						CreatedOnToolsVersion = 9.4;
 						TestTargetID = 78289BFD21200F0B00AC50F0;
 					};
@@ -168,6 +313,8 @@
 			targets = (
 				78289BFD21200F0B00AC50F0 /* LiveViewDemo */,
 				78289C1121200F0D00AC50F0 /* LiveViewDemoTests */,
+				78289C25212010F800AC50F0 /* MyDrawKit */,
+				78289C2D212010F800AC50F0 /* MyDrawKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +331,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		78289C1021200F0D00AC50F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78289C24212010F800AC50F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78289C2C212010F800AC50F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,6 +371,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78289C21212010F800AC50F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78289C452120115700AC50F0 /* MyDrawView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78289C2A212010F800AC50F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78289C36212010F800AC50F0 /* MyDrawKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +394,21 @@
 			isa = PBXTargetDependency;
 			target = 78289BFD21200F0B00AC50F0 /* LiveViewDemo */;
 			targetProxy = 78289C1321200F0D00AC50F0 /* PBXContainerItemProxy */;
+		};
+		78289C31212010F800AC50F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78289C25212010F800AC50F0 /* MyDrawKit */;
+			targetProxy = 78289C30212010F800AC50F0 /* PBXContainerItemProxy */;
+		};
+		78289C33212010F800AC50F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78289BFD21200F0B00AC50F0 /* LiveViewDemo */;
+			targetProxy = 78289C32212010F800AC50F0 /* PBXContainerItemProxy */;
+		};
+		78289C3A212010F800AC50F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78289C25212010F800AC50F0 /* MyDrawKit */;
+			targetProxy = 78289C39212010F800AC50F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,6 +549,7 @@
 		78289C1C21200F0D00AC50F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LiveViewDemo/Info.plist;
@@ -374,6 +567,7 @@
 		78289C1D21200F0D00AC50F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LiveViewDemo/Info.plist;
@@ -428,6 +622,101 @@
 			};
 			name = Release;
 		};
+		78289C3E212010F800AC50F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyDrawKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.MyDrawKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78289C3F212010F800AC50F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyDrawKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.MyDrawKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78289C42212010F800AC50F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDrawKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.MyDrawKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveViewDemo.app/LiveViewDemo";
+			};
+			name = Debug;
+		};
+		78289C43212010F800AC50F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDrawKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.MyDrawKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveViewDemo.app/LiveViewDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -454,6 +743,24 @@
 			buildConfigurations = (
 				78289C1F21200F0D00AC50F0 /* Debug */,
 				78289C2021200F0D00AC50F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78289C3D212010F800AC50F0 /* Build configuration list for PBXNativeTarget "MyDrawKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78289C3E212010F800AC50F0 /* Debug */,
+				78289C3F212010F800AC50F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78289C41212010F800AC50F0 /* Build configuration list for PBXNativeTarget "MyDrawKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78289C42212010F800AC50F0 /* Debug */,
+				78289C43212010F800AC50F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
