@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     var blueBoxView: UIView?
     var redBoxView: UIView?
+    
     var animator: UIDynamicAnimator?
+    
+    var currentLocation: CGPoint?
+    var attachment: UIAttachmentBehavior?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +50,23 @@ class ViewController: UIViewController {
         animator?.addBehavior(behavior)
         animator?.addBehavior(gravity)
         animator?.addBehavior(collision)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let theTouch = touches.first{
+            currentLocation = theTouch.location(in: self.view)
+            //Get out of the center point
+            let offset = UIOffsetMake(20, 20)
+            
+            attachment = UIAttachmentBehavior(item: blueBoxView!,
+                                              offsetFromCenter: offset,
+                                              attachedToAnchor: currentLocation!)
+            animator?.addBehavior(attachment!)
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        animator?.removeBehavior(attachment!)
     }
 
     override func didReceiveMemoryWarning() {
