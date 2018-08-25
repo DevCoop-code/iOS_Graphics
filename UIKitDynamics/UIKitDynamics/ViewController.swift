@@ -47,6 +47,12 @@ class ViewController: UIViewController {
         let behavior = UIDynamicItemBehavior(items: [blueBoxView!])
         behavior.elasticity = 0.5
         
+        //Adjust Spring Effect
+        let boxAttachment = UIAttachmentBehavior(item: blueBoxView!, attachedTo: redBoxView!)
+        boxAttachment.frequency = 4.0
+        boxAttachment.damping = 0.0
+        
+        animator?.addBehavior(boxAttachment)
         animator?.addBehavior(behavior)
         animator?.addBehavior(gravity)
         animator?.addBehavior(collision)
