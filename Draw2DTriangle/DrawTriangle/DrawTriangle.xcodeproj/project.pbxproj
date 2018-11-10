@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7897272E2196D49B003660FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7897272D2196D49B003660FA /* AppDelegate.m */; };
+		789727312196D49B003660FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 789727302196D49B003660FA /* ViewController.m */; };
+		789727342196D49B003660FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789727322196D49B003660FA /* Main.storyboard */; };
+		789727362196D49C003660FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789727352196D49C003660FA /* Assets.xcassets */; };
+		789727392196D49C003660FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789727372196D49C003660FA /* LaunchScreen.storyboard */; };
+		7897273C2196D49C003660FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7897273B2196D49C003660FA /* main.m */; };
+		789727462196D49C003660FA /* DrawTriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 789727452196D49C003660FA /* DrawTriangleTests.m */; };
+		789727522196D566003660FA /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789727512196D566003660FA /* GLKit.framework */; };
+		789727542196D56C003660FA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789727532196D56C003660FA /* OpenGLES.framework */; };
+		78972758219718C1003660FA /* BaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 78972757219718C1003660FA /* BaseEffect.m */; };
+		7897275A2197198D003660FA /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 789727592197198D003660FA /* SimpleVertex.glsl */; };
+		7897275C21971B4E003660FA /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 7897275B21971B4E003660FA /* SimpleFragment.glsl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		789727422196D49C003660FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 789727212196D49B003660FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 789727282196D49B003660FA;
+			remoteInfo = DrawTriangle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		789727292196D49B003660FA /* DrawTriangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawTriangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7897272C2196D49B003660FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7897272D2196D49B003660FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7897272F2196D49B003660FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		789727302196D49B003660FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		789727332196D49B003660FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		789727352196D49C003660FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		789727382196D49C003660FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7897273A2196D49C003660FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7897273B2196D49C003660FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		789727412196D49C003660FA /* DrawTriangleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawTriangleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		789727452196D49C003660FA /* DrawTriangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawTriangleTests.m; sourceTree = "<group>"; };
+		789727472196D49C003660FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		789727512196D566003660FA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		789727532196D56C003660FA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		789727562196DEB0003660FA /* BaseEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseEffect.h; sourceTree = "<group>"; };
+		78972757219718C1003660FA /* BaseEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseEffect.m; sourceTree = "<group>"; };
+		789727592197198D003660FA /* SimpleVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		7897275B21971B4E003660FA /* SimpleFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
+		7897275D21971F5C003660FA /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		789727262196D49B003660FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789727542196D56C003660FA /* OpenGLES.framework in Frameworks */,
+				789727522196D566003660FA /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7897273E2196D49C003660FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		789727202196D49B003660FA = {
+			isa = PBXGroup;
+			children = (
+				7897272B2196D49B003660FA /* DrawTriangle */,
+				789727442196D49C003660FA /* DrawTriangleTests */,
+				7897272A2196D49B003660FA /* Products */,
+				789727502196D566003660FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7897272A2196D49B003660FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				789727292196D49B003660FA /* DrawTriangle.app */,
+				789727412196D49C003660FA /* DrawTriangleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7897272B2196D49B003660FA /* DrawTriangle */ = {
+			isa = PBXGroup;
+			children = (
+				789727552196DE77003660FA /* GLShade */,
+				7897272C2196D49B003660FA /* AppDelegate.h */,
+				7897272D2196D49B003660FA /* AppDelegate.m */,
+				7897272F2196D49B003660FA /* ViewController.h */,
+				789727302196D49B003660FA /* ViewController.m */,
+				789727322196D49B003660FA /* Main.storyboard */,
+				789727352196D49C003660FA /* Assets.xcassets */,
+				789727372196D49C003660FA /* LaunchScreen.storyboard */,
+				7897273A2196D49C003660FA /* Info.plist */,
+				7897273B2196D49C003660FA /* main.m */,
+			);
+			path = DrawTriangle;
+			sourceTree = "<group>";
+		};
+		789727442196D49C003660FA /* DrawTriangleTests */ = {
+			isa = PBXGroup;
+			children = (
+				789727452196D49C003660FA /* DrawTriangleTests.m */,
+				789727472196D49C003660FA /* Info.plist */,
+			);
+			path = DrawTriangleTests;
+			sourceTree = "<group>";
+		};
+		789727502196D566003660FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				789727532196D56C003660FA /* OpenGLES.framework */,
+				789727512196D566003660FA /* GLKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		789727552196DE77003660FA /* GLShade */ = {
+			isa = PBXGroup;
+			children = (
+				789727562196DEB0003660FA /* BaseEffect.h */,
+				78972757219718C1003660FA /* BaseEffect.m */,
+				789727592197198D003660FA /* SimpleVertex.glsl */,
+				7897275B21971B4E003660FA /* SimpleFragment.glsl */,
+				7897275D21971F5C003660FA /* Vertex.h */,
+			);
+			path = GLShade;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		789727282196D49B003660FA /* DrawTriangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7897274A2196D49C003660FA /* Build configuration list for PBXNativeTarget "DrawTriangle" */;
+			buildPhases = (
+				789727252196D49B003660FA /* Sources */,
+				789727262196D49B003660FA /* Frameworks */,
+				789727272196D49B003660FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawTriangle;
+			productName = DrawTriangle;
+			productReference = 789727292196D49B003660FA /* DrawTriangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		789727402196D49C003660FA /* DrawTriangleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7897274D2196D49C003660FA /* Build configuration list for PBXNativeTarget "DrawTriangleTests" */;
+			buildPhases = (
+				7897273D2196D49C003660FA /* Sources */,
+				7897273E2196D49C003660FA /* Frameworks */,
+				7897273F2196D49C003660FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				789727432196D49C003660FA /* PBXTargetDependency */,
+			);
+			name = DrawTriangleTests;
+			productName = DrawTriangleTests;
+			productReference = 789727412196D49C003660FA /* DrawTriangleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		789727212196D49B003660FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = HanGyoJeong;
+				TargetAttributes = {
+					789727282196D49B003660FA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					789727402196D49C003660FA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 789727282196D49B003660FA;
+					};
+				};
+			};
+			buildConfigurationList = 789727242196D49B003660FA /* Build configuration list for PBXProject "DrawTriangle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 789727202196D49B003660FA;
+			productRefGroup = 7897272A2196D49B003660FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				789727282196D49B003660FA /* DrawTriangle */,
+				789727402196D49C003660FA /* DrawTriangleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		789727272196D49B003660FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789727392196D49C003660FA /* LaunchScreen.storyboard in Resources */,
+				7897275A2197198D003660FA /* SimpleVertex.glsl in Resources */,
+				789727362196D49C003660FA /* Assets.xcassets in Resources */,
+				789727342196D49B003660FA /* Main.storyboard in Resources */,
+				7897275C21971B4E003660FA /* SimpleFragment.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7897273F2196D49C003660FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		789727252196D49B003660FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789727312196D49B003660FA /* ViewController.m in Sources */,
+				7897273C2196D49C003660FA /* main.m in Sources */,
+				7897272E2196D49B003660FA /* AppDelegate.m in Sources */,
+				78972758219718C1003660FA /* BaseEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7897273D2196D49C003660FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789727462196D49C003660FA /* DrawTriangleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		789727432196D49C003660FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 789727282196D49B003660FA /* DrawTriangle */;
+			targetProxy = 789727422196D49C003660FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		789727322196D49B003660FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				789727332196D49B003660FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		789727372196D49C003660FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				789727382196D49C003660FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		789727482196D49C003660FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		789727492196D49C003660FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7897274B2196D49C003660FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawTriangle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.DrawTriangle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7897274C2196D49C003660FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawTriangle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.DrawTriangle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7897274E2196D49C003660FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawTriangleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.DrawTriangleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawTriangle.app/DrawTriangle";
+			};
+			name = Debug;
+		};
+		7897274F2196D49C003660FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrawTriangleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.DrawTriangleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawTriangle.app/DrawTriangle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		789727242196D49B003660FA /* Build configuration list for PBXProject "DrawTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789727482196D49C003660FA /* Debug */,
+				789727492196D49C003660FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7897274A2196D49C003660FA /* Build configuration list for PBXNativeTarget "DrawTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7897274B2196D49C003660FA /* Debug */,
+				7897274C2196D49C003660FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7897274D2196D49C003660FA /* Build configuration list for PBXNativeTarget "DrawTriangleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7897274E2196D49C003660FA /* Debug */,
+				7897274F2196D49C003660FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 789727212196D49B003660FA /* Project object */;
+}
