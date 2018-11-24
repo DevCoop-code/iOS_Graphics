@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		784B620721A8FFF10054B07E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B620621A8FFF10054B07E /* AppDelegate.m */; };
+		784B620A21A8FFF10054B07E /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B620921A8FFF10054B07E /* GLViewController.m */; };
+		784B620D21A8FFF10054B07E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784B620B21A8FFF10054B07E /* Main.storyboard */; };
+		784B620F21A8FFF30054B07E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784B620E21A8FFF30054B07E /* Assets.xcassets */; };
+		784B621221A8FFF30054B07E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784B621021A8FFF30054B07E /* LaunchScreen.storyboard */; };
+		784B621521A8FFF30054B07E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B621421A8FFF30054B07E /* main.m */; };
+		784B621F21A8FFF40054B07E /* CubeWithColorTextureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B621E21A8FFF40054B07E /* CubeWithColorTextureTests.m */; };
+		784B622B21A900430054B07E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B622A21A900430054B07E /* GLKit.framework */; };
+		784B622E21A901F00054B07E /* VertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 784B622D21A901F00054B07E /* VertexShader.glsl */; };
+		784B623021A902A00054B07E /* FragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 784B622F21A902A00054B07E /* FragmentShader.glsl */; };
+		784B623221A916990054B07E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B623121A916990054B07E /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		784B621B21A8FFF30054B07E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 784B61FA21A8FFF10054B07E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 784B620121A8FFF10054B07E;
+			remoteInfo = CubeWithColorTexture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		784B620221A8FFF10054B07E /* CubeWithColorTexture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeWithColorTexture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		784B620521A8FFF10054B07E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		784B620621A8FFF10054B07E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		784B620821A8FFF10054B07E /* GLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		784B620921A8FFF10054B07E /* GLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		784B620C21A8FFF10054B07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		784B620E21A8FFF30054B07E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		784B621121A8FFF30054B07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		784B621321A8FFF30054B07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784B621421A8FFF30054B07E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		784B621A21A8FFF30054B07E /* CubeWithColorTextureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeWithColorTextureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		784B621E21A8FFF40054B07E /* CubeWithColorTextureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeWithColorTextureTests.m; sourceTree = "<group>"; };
+		784B622021A8FFF40054B07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784B622A21A900430054B07E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		784B622D21A901F00054B07E /* VertexShader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
+		784B622F21A902A00054B07E /* FragmentShader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
+		784B623121A916990054B07E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		784B61FF21A8FFF10054B07E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784B623221A916990054B07E /* OpenGLES.framework in Frameworks */,
+				784B622B21A900430054B07E /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784B621721A8FFF30054B07E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		784B61F921A8FFF10054B07E = {
+			isa = PBXGroup;
+			children = (
+				784B620421A8FFF10054B07E /* CubeWithColorTexture */,
+				784B621D21A8FFF30054B07E /* CubeWithColorTextureTests */,
+				784B620321A8FFF10054B07E /* Products */,
+				784B622921A900430054B07E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		784B620321A8FFF10054B07E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				784B620221A8FFF10054B07E /* CubeWithColorTexture.app */,
+				784B621A21A8FFF30054B07E /* CubeWithColorTextureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		784B620421A8FFF10054B07E /* CubeWithColorTexture */ = {
+			isa = PBXGroup;
+			children = (
+				784B622C21A901CB0054B07E /* Shaders */,
+				784B620521A8FFF10054B07E /* AppDelegate.h */,
+				784B620621A8FFF10054B07E /* AppDelegate.m */,
+				784B620821A8FFF10054B07E /* GLViewController.h */,
+				784B620921A8FFF10054B07E /* GLViewController.m */,
+				784B620B21A8FFF10054B07E /* Main.storyboard */,
+				784B620E21A8FFF30054B07E /* Assets.xcassets */,
+				784B621021A8FFF30054B07E /* LaunchScreen.storyboard */,
+				784B621321A8FFF30054B07E /* Info.plist */,
+				784B621421A8FFF30054B07E /* main.m */,
+			);
+			path = CubeWithColorTexture;
+			sourceTree = "<group>";
+		};
+		784B621D21A8FFF30054B07E /* CubeWithColorTextureTests */ = {
+			isa = PBXGroup;
+			children = (
+				784B621E21A8FFF40054B07E /* CubeWithColorTextureTests.m */,
+				784B622021A8FFF40054B07E /* Info.plist */,
+			);
+			path = CubeWithColorTextureTests;
+			sourceTree = "<group>";
+		};
+		784B622921A900430054B07E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				784B623121A916990054B07E /* OpenGLES.framework */,
+				784B622A21A900430054B07E /* GLKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		784B622C21A901CB0054B07E /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				784B622D21A901F00054B07E /* VertexShader.glsl */,
+				784B622F21A902A00054B07E /* FragmentShader.glsl */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		784B620121A8FFF10054B07E /* CubeWithColorTexture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784B622321A8FFF40054B07E /* Build configuration list for PBXNativeTarget "CubeWithColorTexture" */;
+			buildPhases = (
+				784B61FE21A8FFF10054B07E /* Sources */,
+				784B61FF21A8FFF10054B07E /* Frameworks */,
+				784B620021A8FFF10054B07E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CubeWithColorTexture;
+			productName = CubeWithColorTexture;
+			productReference = 784B620221A8FFF10054B07E /* CubeWithColorTexture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		784B621921A8FFF30054B07E /* CubeWithColorTextureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784B622621A8FFF40054B07E /* Build configuration list for PBXNativeTarget "CubeWithColorTextureTests" */;
+			buildPhases = (
+				784B621621A8FFF30054B07E /* Sources */,
+				784B621721A8FFF30054B07E /* Frameworks */,
+				784B621821A8FFF30054B07E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				784B621C21A8FFF30054B07E /* PBXTargetDependency */,
+			);
+			name = CubeWithColorTextureTests;
+			productName = CubeWithColorTextureTests;
+			productReference = 784B621A21A8FFF30054B07E /* CubeWithColorTextureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		784B61FA21A8FFF10054B07E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = HanGyoJeong;
+				TargetAttributes = {
+					784B620121A8FFF10054B07E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					784B621921A8FFF30054B07E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 784B620121A8FFF10054B07E;
+					};
+				};
+			};
+			buildConfigurationList = 784B61FD21A8FFF10054B07E /* Build configuration list for PBXProject "CubeWithColorTexture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 784B61F921A8FFF10054B07E;
+			productRefGroup = 784B620321A8FFF10054B07E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				784B620121A8FFF10054B07E /* CubeWithColorTexture */,
+				784B621921A8FFF30054B07E /* CubeWithColorTextureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		784B620021A8FFF10054B07E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784B621221A8FFF30054B07E /* LaunchScreen.storyboard in Resources */,
+				784B620F21A8FFF30054B07E /* Assets.xcassets in Resources */,
+				784B622E21A901F00054B07E /* VertexShader.glsl in Resources */,
+				784B620D21A8FFF10054B07E /* Main.storyboard in Resources */,
+				784B623021A902A00054B07E /* FragmentShader.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784B621821A8FFF30054B07E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		784B61FE21A8FFF10054B07E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784B620A21A8FFF10054B07E /* GLViewController.m in Sources */,
+				784B621521A8FFF30054B07E /* main.m in Sources */,
+				784B620721A8FFF10054B07E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784B621621A8FFF30054B07E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784B621F21A8FFF40054B07E /* CubeWithColorTextureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		784B621C21A8FFF30054B07E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 784B620121A8FFF10054B07E /* CubeWithColorTexture */;
+			targetProxy = 784B621B21A8FFF30054B07E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		784B620B21A8FFF10054B07E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				784B620C21A8FFF10054B07E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		784B621021A8FFF30054B07E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				784B621121A8FFF30054B07E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		784B622121A8FFF40054B07E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		784B622221A8FFF40054B07E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		784B622421A8FFF40054B07E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYV3CSY2F3;
+				INFOPLIST_FILE = CubeWithColorTexture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.CubeWithColorTexture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		784B622521A8FFF40054B07E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYV3CSY2F3;
+				INFOPLIST_FILE = CubeWithColorTexture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.CubeWithColorTexture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		784B622721A8FFF40054B07E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CubeWithColorTextureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.CubeWithColorTextureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CubeWithColorTexture.app/CubeWithColorTexture";
+			};
+			name = Debug;
+		};
+		784B622821A8FFF40054B07E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CubeWithColorTextureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hangyojeong.CubeWithColorTextureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CubeWithColorTexture.app/CubeWithColorTexture";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		784B61FD21A8FFF10054B07E /* Build configuration list for PBXProject "CubeWithColorTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784B622121A8FFF40054B07E /* Debug */,
+				784B622221A8FFF40054B07E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784B622321A8FFF40054B07E /* Build configuration list for PBXNativeTarget "CubeWithColorTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784B622421A8FFF40054B07E /* Debug */,
+				784B622521A8FFF40054B07E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784B622621A8FFF40054B07E /* Build configuration list for PBXNativeTarget "CubeWithColorTextureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784B622721A8FFF40054B07E /* Debug */,
+				784B622821A8FFF40054B07E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 784B61FA21A8FFF10054B07E /* Project object */;
+}
